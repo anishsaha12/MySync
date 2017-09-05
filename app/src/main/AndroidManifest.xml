@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rising.anish.mysyncapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:logo="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.rising.anish.mysyncapp.MainActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rising.anish.mysyncapp.UploadImage" android:label="Upload" android:parentActivityName="com.rising.anish.mysyncapp.MainActivity" />
+        <activity android:name="com.rising.anish.mysyncapp.UploadFile" android:label="Upload" android:parentActivityName="com.rising.anish.mysyncapp.MainActivity" />
+        <activity android:name="com.rising.anish.mysyncapp.PicturesActivity" android:label="Pictures" android:parentActivityName="com.rising.anish.mysyncapp.MainActivity"/>
+        <activity android:name="com.rising.anish.mysyncapp.FilesActivity" android:label="Files" android:parentActivityName="com.rising.anish.mysyncapp.MainActivity"/>
+        <activity android:name="com.rising.anish.mysyncapp.Test"/>
+        <activity android:name="com.rising.anish.mysyncapp.FileUpload" android:theme="@style/NoTitleActivity" />
+        <activity android:name="com.rising.anish.mysyncapp.ViewPicture" android:theme="@style/NoTitleDialog"  />
+        <activity android:name="com.rising.anish.mysyncapp.SharedCont" android:theme="@style/NoTitleDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.rising.anish.mysyncapp.UploadFileService"/>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+</manifest>

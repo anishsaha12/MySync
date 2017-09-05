@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_takePic"
+        android:orderInCategory="100"
+        android:title="Take photo"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_sendPic"
+        android:orderInCategory="100"
+        android:title="Send photo"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_sendFile"
+        android:orderInCategory="100"
+        android:title="Send file"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home_black_24dp" />
+        <item
+            android:id="@+id/nav_photos"
+            android:title="Photos"
+            android:icon="@drawable/ic_photo_album_black_24dp" />
+        <item
+            android:id="@+id/nav_files"
+            android:title="Files"
+            android:icon="@drawable/ic_folder_black_24dp"/>
+    </group>
+
+    <item android:title="Actions" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_upload_pic"
+                    android:title="Upload Picture"
+                    android:icon="@drawable/ic_add_a_photo_black_24dp" />
+                <item
+                    android:id="@+id/nav_upload_file"
+                    android:title="Upload File"
+                    android:icon="@drawable/ic_file_upload_black_24dp" />
+
+                <item
+                    android:id="@+id/nav_refresh_database"
+                    android:title="Refresh Database"
+                    android:icon="@drawable/ic_sync_black_24dp" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
